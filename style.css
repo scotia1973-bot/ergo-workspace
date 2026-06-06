@@ -1,0 +1,84 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif; line-height: 1.6; color: #1a1a2e; background: #f8f9fa; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+a { color: #4361ee; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.site-header { background: #1a1a2e; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+.site-header .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.4em; font-weight: 800; color: white; }
+.logo span { color: #4cc9f0; }
+.site-header nav a { color: #ccc; margin-left: 20px; font-size: 0.9em; }
+.site-header nav a:hover { color: white; text-decoration: none; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: white; padding: 80px 0; text-align: center; }
+.hero h1 { font-size: 2.5em; margin-bottom: 15px; }
+.hero p { font-size: 1.2em; color: #a0aec0; max-width: 700px; margin: 0 auto; }
+
+/* Categories */
+.categories { padding: 60px 0; }
+.categories h2, .featured-guides h2 { font-size: 1.8em; margin-bottom: 30px; text-align: center; }
+.category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.category-card { background: white; border-radius: 12px; padding: 30px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+.category-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); text-decoration: none; }
+.category-card .card-icon { font-size: 3em; margin-bottom: 15px; }
+.category-card h3 { color: #1a1a2e; margin-bottom: 10px; }
+.category-card p { color: #666; font-size: 0.9em; }
+
+/* Guides */
+.featured-guides { padding: 60px 0; background: white; }
+.guide-list { max-width: 800px; margin: 0 auto; }
+.guide-item { padding: 20px 0; border-bottom: 1px solid #eee; }
+.guide-item:last-child { border-bottom: none; }
+.guide-item h3 { margin-bottom: 5px; }
+.guide-item p { color: #666; font-size: 0.95em; }
+
+/* Articles */
+.article-content { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.article-content h1 { font-size: 2em; margin-bottom: 20px; }
+.article-content h2 { font-size: 1.4em; margin: 30px 0 15px; }
+.article-content h3 { font-size: 1.2em; margin: 25px 0 10px; }
+.article-content p { margin-bottom: 15px; color: #333; }
+.article-content ul, .article-content ol { margin: 15px 0; padding-left: 20px; }
+.article-content li { margin-bottom: 8px; }
+.article-content .affiliate-link { display: inline-block; background: #4361ee; color: white; padding: 10px 25px; border-radius: 8px; font-weight: 600; margin: 10px 0; }
+.article-content .affiliate-link:hover { background: #3651d4; text-decoration: none; }
+.article-content .product-card { background: #f8f9fa; border: 1px solid #eee; border-radius: 12px; padding: 20px; margin: 20px 0; }
+.article-content .product-card h3 { margin-top: 0; }
+.article-content .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+.article-content .pros { background: #d4edda; padding: 15px; border-radius: 8px; }
+.article-content .cons { background: #f8d7da; padding: 15px; border-radius: 8px; }
+.article-content .pros h4 { color: #155724; }
+.article-content .cons h4 { color: #721c24; }
+
+/* Footer */
+.site-footer { background: #1a1a2e; color: #a0aec0; padding: 40px 0; text-align: center; font-size: 0.85em; }
+.site-footer p { margin-bottom: 10px; }
+
+/* Breadcrumbs */
+.breadcrumbs { padding: 15px 0; font-size: 0.85em; color: #666; max-width: 800px; margin: 0 auto; }
+.breadcrumbs a { color: #4361ee; }
+.breadcrumbs span { color: #999; }
+
+/* Blog */
+.blog-list { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.blog-post { padding: 25px 0; border-bottom: 1px solid #eee; }
+.blog-post:last-child { border-bottom: none; }
+.blog-post h2 { margin-bottom: 8px; }
+.blog-post .date { color: #999; font-size: 0.85em; margin-bottom: 10px; }
+.blog-post p { color: #666; }
+
+/* Comparisons */
+.comparison-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+.comparison-table th, .comparison-table td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+.comparison-table th { background: #1a1a2e; color: white; }
+.comparison-table tr:nth-child(even) { background: #f8f9fa; }
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 1.8em; }
+    .site-header nav a { margin-left: 12px; font-size: 0.8em; }
+    .category-grid { grid-template-columns: 1fr; }
+    .pros-cons { grid-template-columns: 1fr; }
+}
